@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-34 mb-30 bg-[#F2F0EA]">
+    <section id="contact" className="py-34 mb-30 bg-[#F2F0EA] rounded-md shadow-xl">
       <div className="max-w-xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
         <p className="text-gray-700 text-lg mb-8">
@@ -13,7 +13,7 @@ export default function Contact() {
           Let's get in touch.
         </p>
         <div className="flex flex-col items-center space-y-4">
-          <div className="flex gap-4 text-center text-gray">
+          <div className="flex gap-4 text-center text-biru">
             <a
               href="mailto:muh.dhoni@gmail.com"
               className="text-gray content-center underline w-[40px]"

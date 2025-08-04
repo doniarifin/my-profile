@@ -29,15 +29,22 @@ export default function Header() {
   }, []);
 
   const navLinkClass = (id: string) =>
-    `hover:text-[#A8D5E3] hover:underline transition ${
-      activeSection === id ? "text-[#A8D5E3] underline font-semibold" : ""
+    `hover:text-white hover:bg-[#242a31] rounded-md p-2 transition ${
+      activeSection === id ? "text-white bg-[#242a31] p-2" : ""
     }`;
 
   return (
-    <header className="fixed top-0 w-full bg-gray-800 py-3 text-gray-300 shadow z-50">
+    <header className="fixed top-0 w-full bg-white py-3 text-[#242a31] shadow z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-lg">Doni's Profile</h1>
-        <nav className="space-x-6">
+        {/* <h1 className="font-bold text-lg">Doni's Profile</h1> */}
+        <div>
+          <img 
+            src="/img/donilogo.png" 
+            alt="logo" 
+            className="w-[30px] h-[30px] object-contain"
+          />
+        </div>
+        <nav className="space-x-10">
           <a href="#about" className={navLinkClass("about")}>About</a>
           <a href="#experience" className={navLinkClass("experience")}>Experience</a>
           <a href="#projects" className={navLinkClass("projects")}>Projects</a>

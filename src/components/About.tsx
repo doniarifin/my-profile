@@ -16,7 +16,7 @@ export default function About() {
         {['Golang', 'React', 'Vue.js', 'Nuxt.js', 'Tailwind CSS', 'SQL', 'MongoDB'].map(skill => (
           <span
             key={skill}
-            className="bg-[#A8D5E3] text-gray-800 px-4 py-2 rounded-full text-sm font-medium"
+            className="bg-[#A8D5E3] text-gray-800 px-4 py-2 rounded-full text-sm font-medium rounded-md shadow-xl"
           >
             {skill}
           </span>

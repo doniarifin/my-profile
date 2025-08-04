@@ -27,14 +27,14 @@ export default function Projects() {
         <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((proj, index) => (
-            <div key={index} className="border p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-2">{proj.name}</h3>
-              <p className="text-gray-600 text-justify">{proj.desc}</p>
+            <div key={index} className="p-6 bg-[#F2F0EA] rounded-md shadow-xl">
+              <h3 className="text-xl text-primary font-semibold mb-2">{proj.name}</h3>
+              <p className="text-primary text-justify">{proj.desc}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {proj.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="bg-[#A8D5E3] text-gray-800 text-sm px-3 py-1 rounded-full"
+                    className="bg-[#A8D5E3] text-gray-800 text-sm px-3 py-1 rounded-md shadow-xl"
                   >
                     {t}
                   </span>
@@ -48,14 +48,14 @@ export default function Projects() {
         <h3 className="text-2xl font-bold text-center mb-10">Personal Portofolio</h3>
         <div className="grid md:grid-cols-1 gap-8">
           {portofolio.map((proj, index) => (
-            <div key={index} className="border p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-2">{proj.name}</h3>
-              <p className="text-gray-600 text-justify">{proj.desc}</p>
+            <div key={index} className="bg-[#F2F0EA] p-6 rounded-md shadow-xl">
+              <h3 className="text-xl text-primary font-semibold mb-2">{proj.name}</h3>
+              <p className="text-primary text-justify">{proj.desc}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {proj.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="bg-[#A8D5E3] text-gray-800 text-sm px-3 py-1 rounded-full"
+                    className="bg-[#A8D5E3] text-gray-800 text-sm px-3 py-1 rounded-md shadow-xl"
                   >
                     {t}
                   </span>
@@ -65,7 +65,7 @@ export default function Projects() {
                 className="pt-8 text-center"
               >
                 <span
-                  className="bg-[#FF78AC] hover:bg-gray-800 hover:text-white text-gray-800 text-md px-3 py-2 rounded"
+                  className="bg-biru text-white hover:bg-[#A8D5E3] hover:text-gray-800 hover:text-bold text-gray-800 hover:shadow-xl shadow-md text-md px-3 py-2 rounded-md"
                 >
                   <a 
                     href={proj.link}

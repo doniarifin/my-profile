@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-10 pb-15">
+    <footer className="bg-[#242a31] text-gray-300 py-10 pb-15">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         <p className="text-sm text-center md:text-left">
           Handcrafted by Doni Arifin

@@ -9,12 +9,12 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-34 bg-[#F2F0EA]">
+    <section id="experience" className="py-34 bg-[#F2F0EA] rounded-md shadow-xl">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-10">Experience</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white shadow-md p-6 rounded-md">
+            <div key={index} className="bg-white hover:shadow-xl shadow-md p-6 rounded-md">
               <h3 className="text-xl font-semibold">{exp.role} | {exp.company}</h3>
               <span className="text-gray-500 text-sm">{exp.period}</span>
               <p className="mt-2 text-gray-700 text-justify">{exp.desc}</p>

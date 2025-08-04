@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat, Josefin_Sans, Outfit } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Josefin_Sans, Outfit, Roboto } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -8,6 +8,11 @@ const montserrat = Montserrat({
 })
 const outfit = Outfit({
   variable: "--font-outfit",
+  subsets: ['latin'],
+})
+
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ['latin'],
 })
 
@@ -39,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={outfit.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${outfit.variable} ${josefinSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${outfit.variable} ${josefinSans.variable} ${roboto.variable} antialiased`}
       >
         {children}
       </body>

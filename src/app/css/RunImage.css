@@ -1,0 +1,31 @@
+.img-run {
+  position: relative;
+  left: 100%;
+  transform: translateY(0);
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+.run {
+  animation: runLeft 1.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+@keyframes runLeft {
+  0% {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.05); /* sedikit bounce */
+  }
+  70% {
+    left: 10%;
+  }
+  100% {
+    left: 0%;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
