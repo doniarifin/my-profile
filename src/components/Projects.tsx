@@ -17,7 +17,7 @@ export default function Projects() {
       name: 'CV Generator',
       tech: ['Vue.js', 'Tailwind CSS'],
       desc: 'An application for creating CVs instantly.',
-      link: 'https://doniarifin.github.io/cv-generator-vue/',
+      link: 'https://doniarifin.github.io/vue-cvgenerator/',
     },
   ];
 
